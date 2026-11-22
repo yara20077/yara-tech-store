@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yara Tech | متجر التقنية</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Yara<span>Tech.</span></a>
+
+        <nav class="nav">
+            <a href="#home">الرئيسية</a>
+            <a href="#products">المنتجات</a>
+            <a href="#about">عن المتجر</a>
+            <a href="#contact">تواصل معنا</a>
+        </nav>
+
+        <button class="cart-button" onclick="toggleCart()">
+            🛒 السلة <span id="cart-count">0</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="subtitle">اكتشف عالم التقنية</p>
+                <h1>تقنية المستقبل<br>بين يديك</h1>
+                <p>اكتشف أحدث الأجهزة والإلكترونيات
+                   بتجربة تسوق عصرية ومميزة.</p>
+                <a href="#products" class="hero-button">
+                    اكتشف المنتجات
+                </a>
+            </div>
+        </section>
+
+        <section class="products-section" id="products">
+            <h2>منتجاتنا</h2>
+            <p class="section-description">
+                اختر جهازك المفضل من مجموعتنا
+            </p>
+
+            <div class="filters">
+                <input
+                    type="search"
+                    id="search"
+                    placeholder="ابحث عن منتج..."
+                >
+
+                <select id="category">
+                    <option value="all">جميع المنتجات</option>
+                    <option value="phones">جوالات</option>
+                    <option value="laptops">لابتوبات</option>
+                    <option value="accessories">إكسسوارات</option>
+                </select>
+            </div>
+
+            <div class="products-grid" id="products-grid">
+                <!-- المنتجات ستظهر بواسطة JavaScript -->
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2>عن Yara Tech</h2>
+            <p>
+                متجر تقني تجريبي يهدف إلى تقديم تجربة
+                تسوق إلكترونية سهلة وعصرية.
+            </p>
+        </section>
+    </main>
+
+    <div class="cart-panel" id="cart-panel">
+        <button onclick="toggleCart()">✕ إغلاق</button>
+        <h2>سلة المشتريات</h2>
+        <div id="cart-items"></div>
+        <h3>الإجمالي: <span id="cart-total">0</span> ر.س</h3>
+    </div>
+
+    <footer id="contact">
+        <h3>Yara Tech.</h3>
+        <p>© 2026 جميع الحقوق محفوظة</p>
+    </footer>
+
+</body>
+</html>
